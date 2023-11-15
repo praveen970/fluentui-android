@@ -134,9 +134,9 @@ fun Snackbar(
         Row(
             modifier
                 .graphicsLayer(scaleX = scale.value, scaleY = scale.value, alpha = alpha.value)
-                .padding(horizontal = 16.dp)
                 .defaultMinSize(minHeight = 52.dp)
                 .fillMaxWidth()
+                .padding(horizontal = 16.dp)
                 .clip(RoundedCornerShape(8.dp))
                 .background(token.backgroundBrush(snackBarInfo))
                 .semantics {

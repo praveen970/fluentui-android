@@ -24,6 +24,20 @@ open class LabelInfo(
     val colorStyle: ColorStyle
 ) : ControlInfo
 
+data class LabelDataTokens(
+    private val typographyOverride: TextStyle? = null,
+    private val textColorOverride: Color? = null
+){
+    val typography: TextStyle
+        @Composable
+        get() = typographyOverride ?: FluentTheme.aliasTokens.typography[TypographyTokens.Display]
+
+    val textColor: Color
+        @Composable
+        get() = textColorOverride ?: FluentTheme.aliasTokens.neutralForegroundColor[FluentAliasTokens.NeutralForegroundColorTokens.Foreground1].value(
+            themeMode = FluentTheme.themeMode
+        )
+}
 @Parcelize
 open class LabelTokens : IControlToken, Parcelable {
     @Composable
@@ -57,7 +71,7 @@ open class LabelTokens : IControlToken, Parcelable {
     }
 
     @Composable
-    fun textColor(labelInfo: LabelInfo): Color {
+    open fun textColor(labelInfo: LabelInfo): Color {
         return when (labelInfo.colorStyle) {
             ColorStyle.Primary -> FluentTheme.aliasTokens.neutralForegroundColor[FluentAliasTokens.NeutralForegroundColorTokens.Foreground1].value(
                 themeMode = FluentTheme.themeMode

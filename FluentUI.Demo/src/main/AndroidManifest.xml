@@ -23,6 +23,7 @@
 
         <!-- Demo activities -->
 
+        <activity android:name="com.microsoft.fluentuidemo.demos.TokenTestingActivity"/>
         <activity android:name="com.microsoft.fluentuidemo.demos.V2AppBarActivity" />
         <activity android:name="com.microsoft.fluentuidemo.demos.V2AvatarActivity" />
         <activity android:name="com.microsoft.fluentuidemo.demos.V2AvatarCarouselActivity" />

@@ -38,7 +38,6 @@ import com.microsoft.fluentui.tokenized.controls.Label
 import com.microsoft.fluentui.tokenized.controls.RadioButton
 import com.microsoft.fluentui.tokenized.drawer.Drawer
 import com.microsoft.fluentui.tokenized.drawer.rememberDrawerState
-import com.microsoft.fluentui.util.activity
 import com.microsoft.fluentuidemo.R
 import com.microsoft.fluentuidemo.demos.ContentType
 import kotlinx.coroutines.launch

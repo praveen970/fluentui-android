@@ -28,6 +28,7 @@ import com.microsoft.fluentuidemo.demos.ProgressActivity
 import com.microsoft.fluentuidemo.demos.SnackbarActivity
 import com.microsoft.fluentuidemo.demos.TabLayoutActivity
 import com.microsoft.fluentuidemo.demos.TemplateViewActivity
+import com.microsoft.fluentuidemo.demos.TokenTestingActivity
 import com.microsoft.fluentuidemo.demos.TooltipActivity
 import com.microsoft.fluentuidemo.demos.TypographyActivity
 import com.microsoft.fluentuidemo.demos.V2AppBarActivity
@@ -74,6 +75,7 @@ enum class Badge {
     APIBreak
 }
 
+const val TEST = "Test"
 const val V2AVATAR = "V2 Avatar"
 const val V2AVATAR_CAROUSEL = "V2 Avatar Carousel"
 const val V2AVATAR_GROUP = "V2 Avatar Group"
@@ -161,6 +163,7 @@ val V1DEMO = arrayListOf(
 )
 
 val V2DEMO = arrayListOf(
+    Demo(TEST, TokenTestingActivity::class),
     Demo(V2APP_BAR_LAYOUT, V2AppBarActivity::class),
     Demo(V2AVATAR, V2AvatarActivity::class),
     Demo(V2AVATAR_CAROUSEL, V2AvatarCarouselActivity::class),

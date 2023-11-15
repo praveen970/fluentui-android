@@ -266,7 +266,7 @@ class V2SnackbarActivity : V2DemoActivity() {
                         onClick = {
                             scope.launch {
                                 val result: NotificationResult = snackbarState.showSnackbar(
-                                    "Hello from Fluent",
+                                    "Hello from Fluent Hello from Fluent Hello from to to to to to to",
                                     style = style,
                                     icon = if (icon) FluentIcon(Icons.Outlined.ShoppingCart) else null,
                                     actionText = if (actionLabel) actionButtonString else null,
